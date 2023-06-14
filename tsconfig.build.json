@@ -3,8 +3,10 @@
   "exclude": [
     "node_modules",
     "dist",
-    "**/__tests__/*",
-    "**/__mocks__/*",
-    "**/*spec.ts"
+    "coverage",
+    "__tests__",
+    "__mocks__",
+    "*.ts",
+    "*.js"
   ]
 }
