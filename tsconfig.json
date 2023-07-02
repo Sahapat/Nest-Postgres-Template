@@ -18,7 +18,9 @@
     "strict": true,
     "allowJs": true,
     "paths": {
-      "@/*": ["./src/*", ]
+      "@/*": ["./src/*"],
+      "@mocks/*": ["./__mocks__/*"],
+      "@tests/*": ["./__tests__/*"]
     }
   },
   "compileOnSave": true,

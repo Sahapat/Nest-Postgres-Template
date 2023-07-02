@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { AppController } from '@/app.controller'
 import { AppService } from '@/app.service'
+import { MockAppControllerReturn } from '@mocks/template.mock'
 
 describe('AppController', () => {
   let app: TestingModule
@@ -15,7 +16,7 @@ describe('AppController', () => {
   describe('getHello', () => {
     it('should return "Hello World!"', () => {
       const appController = app.get(AppController)
-      expect(appController.getHello()).toBe('Hello World!')
+      expect(appController.getHello()).toBe(MockAppControllerReturn)
     })
   })
 })
